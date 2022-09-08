@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://dh-zheng.github.io/sitemap.xml
+Sitemap: https://dh-zheng.github.io/Notes/sitemap.xml
