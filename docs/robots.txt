@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://dh-zheng.github.io/Notes/sitemap.xml
