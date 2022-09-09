@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Categories on DH-ZHeng's Notes</title><link>/categories.html</link><description>Recent content in Categories on DH-ZHeng's Notes</description><image><url>img/headp.png</url><link>img/headp.png</link></image><generator>Hugo -- gohugo.io</generator><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>/categories/civil-servant/essay.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/categories/civil-servant/essay.html</guid><description>申论基础 graph TD
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Categories on DH-ZHeng's Notes</title><link>/categories/</link><description>Recent content in Categories on DH-ZHeng's Notes</description><image><url>img/headp.png</url><link>img/headp.png</link></image><generator>Hugo -- gohugo.io</generator><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>/categories/civil-servant/essay/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/categories/civil-servant/essay/</guid><description>申论基础 graph TD
 A(要点技巧)---&amp;gt;B1(摘抄)
 A---&amp;gt;B2(归纳概括)
 A---&amp;gt;C2(分析推导) 分析答题点 分数 20分：可能4或者5个要点 25分：可能5个要点 字数 平均一个词5个字 总字数除以5，乘以2/3一个词平均是5，乘以2/3是为了去掉空格 150字：20词 200字：25词 300字：35词 ==再平均分配到要点上== 分析材料 读材料是要整体把握材料分了哪几个部分，根据题目的字数确定每个答题点的词数 材料中有人讲话的地方非常重要，一般有答题点，讲话分为两类 讲话类型 做题策略 直接指出问题/对策 直接抄 讲故事 需要概括归纳 不知道写分类词的时候，从一头一尾挑分类词的正确率最大 单一题 特点
@@ -24,4 +24,22 @@ C34-.--D34[直接摘抄或归纳概括]
 C34-.--D35[借鉴他人做法] 对策 {igonre} !!!note 对策是一个动作
 出题方式
 概括做法：做法已经做了，做了概括出来，本质上就是抄。 启示/经验： Example ①小明这个做法做得特别好，谈一谈小明的做法对别人有什么样的启示/可供借鉴的经验 ②小明的做法已经做了，也是抄，但是抄的过程中注意普适性 ==比如小明好公务员，同学考的是教资。小明做的是申论题，同学做的是教资题，需要找到二者之间的共同性/普适性== 根据问题提对策：这个对策没有发生，不能抄，此时是推对策 概括举措
-S市已经做过了，可以直接抄 难点：字数很少，但材料特别多 取舍的重点是逻辑：识别出总结性强的词 出现标志性动词时，往往得分点 常见动词 建立、健全、统筹、创新、规范、整顿、打击、扶持、规划、设置等 ==对策是动宾短语== 经验启示类</description></item></channel></rss>
+S市已经做过了，可以直接抄 难点：字数很少，但材料特别多 取舍的重点是逻辑：识别出总结性强的词 出现标志性动词时，往往得分点 常见动词 建立、健全、统筹、创新、规范、整顿、打击、扶持、规划、设置等 ==对策是动宾短语== 经验启示类</description></item><item><title/><link>/categories/research-report/%E8%A1%8C%E4%B8%9A%E8%BD%AE%E5%8A%A8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/categories/research-report/%E8%A1%8C%E4%B8%9A%E8%BD%AE%E5%8A%A8/</guid><description>基于拥挤度判断的行业轮动策略 来源：基于拥挤度判断的行业轮动策略——信达证券 行业轮动策略（动量策略） 年度动量效应在行业层面可能有效，捕捉动量效应和规避动量崩溃是决定动量策略表现的关键因素
+定义各行业的动量因子为过去一段时间的行业累计收益率，有： $$ F_{i,t} = \frac{ClosePrice_{i,t}}{ClosePrice_{i,t-win_len+1}}-1 $$
+$F_{i,t}$为第𝑖个行业在𝑡时刻的动量因子
+𝑖 = 1,2, ⋯ , 𝑁; 𝑡 = 𝑤𝑖𝑛_𝑙𝑒𝑛, ⋯ , 𝑇；
+𝑁为截面行业个数；𝑇为回测时段总天数；
+𝐶𝑙𝑜𝑠𝑒𝑃𝑟𝑖𝑐𝑒~𝑖~,𝑡为第𝑖个行业在𝑡时刻的收盘价
+𝑤𝑖𝑛_𝑙𝑒𝑛为计算累计收益率时使用的回看窗口的天数
+!!!note 回看窗口（𝒘𝒊𝒏_𝒍𝒆𝒏）是动量策略的关键参数 &amp;lt;60交易日为短期；&amp;gt;250交易日为长期
+中期动量250个交易日为最优
+数据：28个中信一级行业（不含综合、综合金融）
+策略：过去250个交易日累计涨幅最高的6个行业为多头组合；过去250个交易日累计涨幅最低的6个行业为空头组合；28个行业等权组合为基准
+单行业拥挤度 规避相对拥挤的市场环境和行业是动量策略回撤控制的重要方向和手段
+!!!note 构建资产集中度（Asset Centrality）指标来捕捉一组相似资产的拥挤程度
+STEP1：主成分分析。将𝑁个行业的收益率时间序列去中心化（去平均值），进行主成分分析，得到𝑁个特征值和𝑁个特征向量。
+STEP2：计算方差贡献率。将特征值按照从大到小的顺序排序，将其对应的前𝑛个特征向量分别作为列向量组成特征向量矩阵，计算前𝑛个特征向量的方差贡献率𝐴𝑅（Absorption Ratio）。 $$ AR = \frac{\sum\limits_{j=1}^{n} {\sigma^2_{Ej}}}{\sum\limits_{i=1}^{N} {\sigma^2_{Aj}}} $$ N:横截面个数 n:选取的特征向量数 $\sigma^2_{Ej}$:第j个特征向量方差 $\sigma^2_{Aj}$:第i个行业方差
+在𝑛一定的情况下，方差贡献率𝐴𝑅越高，说明各行业走势的共同驱动因素就越强
+STEP3：计算单个行业𝑖的资产集中度。以前𝑛个𝐴𝑅为加权比例，计算第𝑖个行业分别在𝑛个特征向量暴露的绝对值在所有行业中的占比。行业𝑖的资产集中度指标即作为行业𝑖的拥挤度度量指标，有: $$ C_{i} = \frac{\sum\limits_{j=1}^{n} ({AR^j_i}*\frac{|EV^j_i|}{\sum\limits_{k=1}^{N} {|EV^j_k|}})}{\sum\limits_{j=1}^{n} {AR^j_i}} $$ $C_{i}$:行业𝑖的资产集中度得分; $AR^j_i$:第𝑗个特征向量的方差贡献率 $EV^j_i$:第𝑖个行业在第𝑗个特征向量暴露的绝对值 n:𝑛为方差贡献率分子中的特征向量数，取2
+策略
+多头组合：取出28 个中信一级行业（不含综合、综合金融）中过去250 个交易日累计涨幅最高的6 个行业。若6 个行业中不包含当前截面最拥挤行业，则等权买入该6 个行业；否则剔除最拥挤行业后递补涨幅靠前的第7 个行业。 空头组合：每次调仓时等权买入28 个中信一级行业（不含综合、综合金融）中，过去250 个交易日累计涨幅最低的6 个行业。 等权组合：每次调仓时等权买入28 个中信一级行业（不含综合、综合金融）。 多头超额：多头组合相对等权组合的累计超额。 市场拥挤度 单行业拥挤度指标剔除最拥挤行业降低了多头组合的持仓风险</description></item></channel></rss>
