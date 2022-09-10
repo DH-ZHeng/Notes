@@ -1,8 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>DH-ZHeng's Notes</title><link>/</link><description>Recent content on DH-ZHeng's Notes</description><image><url>img/headp.png</url><link>img/headp.png</link></image><generator>Hugo -- gohugo.io</generator><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>/archive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/archive/</guid><description>├── config.yml ├── content/ │ ├── archives.md &amp;lt;&amp;mdash; Create archive.md here │ └── posts/ ├── static/ └── themes/ └── PaperMod/
-title: &amp;ldquo;Archive&amp;rdquo; layout: &amp;ldquo;archives&amp;rdquo; url: &amp;ldquo;/archives/&amp;rdquo; summary: archives</description></item><item><title/><link>/post/civil-servant/essay/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/post/civil-servant/essay/</guid><description>申论基础 要点技巧 摘抄 归纳概括 分析推导 分析答题点 分数 20分：可能4或者5个要点 25分：可能5个要点 字数 平均一个词5个字 总字数除以5，乘以2/3一个词平均是5，乘以2/3是为了去掉空格 150字：20词 200字：25词 300字：35词 再平均分配到要点上 分析材料 读材料是要整体把握材料分了哪几个部分，根据题目的字数确定每个答题点的词数 材料中有人讲话的地方非常重要，一般有答题点，讲话分为两类 讲话类型 做题策略 直接指出问题/对策 直接抄 讲故事 需要概括归纳 不知道写分类词的时候，从一头一尾挑分类词的正确率最大 单一题 特点
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DH-ZHeng&#39;s Notes</title>
+    <link>/</link>
+    <description>Recent content on DH-ZHeng&#39;s Notes</description>
+    <image>
+      <url>img/headp.png</url>
+      <link>img/headp.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/archive/</guid>
+      <description>├── config.yml ├── content/ │ ├── archives.md &amp;lt;&amp;mdash; Create archive.md here │ └── posts/ ├── static/ └── themes/ └── PaperMod/
+title: &amp;ldquo;Archive&amp;rdquo; layout: &amp;ldquo;archives&amp;rdquo; url: &amp;ldquo;/archives/&amp;rdquo; summary: archives </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/post/civil-servant/essay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/civil-servant/essay/</guid>
+      <description>申论基础 要点技巧 摘抄 归纳概括 分析推导 分析答题点 分数 20分：可能4或者5个要点 25分：可能5个要点 字数 平均一个词5个字 总字数除以5，乘以2/3一个词平均是5，乘以2/3是为了去掉空格 150字：20词 200字：25词 300字：35词 再平均分配到要点上 分析材料 读材料是要整体把握材料分了哪几个部分，根据题目的字数确定每个答题点的词数 材料中有人讲话的地方非常重要，一般有答题点，讲话分为两类 讲话类型 做题策略 直接指出问题/对策 直接抄 讲故事 需要概括归纳 不知道写分类词的时候，从一头一尾挑分类词的正确率最大 单一题 特点
 作答要素明确：问题、对策、意义、变化、特点 作答要素相对较少 答题模板
 答案分条列点(&amp;ldquo;1.2.3.&amp;rdquo;) 每条要点上话题一致，有总括性信息 !!!note 1.加强基层党建。壮大队伍，选派优秀人才；将基层党建组织下沉。2.改善人居环境。推进农村环境综合整治和生态文明建设，提升环境。3.保护历史文化。修缮和活化文化遗存。
-常见要素识别及答题技巧 问题 常见问法 问题 不足 困境 瓶颈 挑战 难点等 答题技巧 直接摘抄 归纳概括 分析推导 影响 常见问法 正面：意义、效果、成果、积极作用等 方面: 危害、后果等 答题技巧（正面） 通过问题进行推导:欲解决问题可理解为意义 通过目的进行推导 答题技巧（反面） 引发、导致、造成、危害&amp;hellip; 消解了、割裂了、破坏了&amp;hellip; 对策 常见问法 对策 举措 措施 意见 做法 解决方法 经验 启示&amp;hellip; 答题技巧 概括性措施：摘抄或归纳总结 经验启示类：从其它主题借鉴or借鉴要具有普适性 提出对策类: 通过问题反推 !</description></item><item><title/><link>/post/civil-servant/%E8%A1%8C%E4%B8%9A%E8%BD%AE%E5%8A%A8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/post/civil-servant/%E8%A1%8C%E4%B8%9A%E8%BD%AE%E5%8A%A8/</guid><description>基于拥挤度判断的行业轮动策略 来源：基于拥挤度判断的行业轮动策略——信达证券 行业轮动策略（动量策略） 年度动量效应在行业层面可能有效，捕捉动量效应和规避动量崩溃是决定动量策略表现的关键因素
+常见要素识别及答题技巧 问题 常见问法 问题 不足 困境 瓶颈 挑战 难点等 答题技巧 直接摘抄 归纳概括 分析推导 影响 常见问法 正面：意义、效果、成果、积极作用等 方面: 危害、后果等 答题技巧（正面） 通过问题进行推导:欲解决问题可理解为意义 通过目的进行推导 答题技巧（反面） 引发、导致、造成、危害&amp;hellip; 消解了、割裂了、破坏了&amp;hellip; 对策 常见问法 对策 举措 措施 意见 做法 解决方法 经验 启示&amp;hellip; 答题技巧 概括性措施：摘抄或归纳总结 经验启示类：从其它主题借鉴or借鉴要具有普适性 提出对策类: 通过问题反推 !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/post/civil-servant/%E8%A1%8C%E4%B8%9A%E8%BD%AE%E5%8A%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/civil-servant/%E8%A1%8C%E4%B8%9A%E8%BD%AE%E5%8A%A8/</guid>
+      <description>基于拥挤度判断的行业轮动策略 来源：基于拥挤度判断的行业轮动策略——信达证券 行业轮动策略（动量策略） 年度动量效应在行业层面可能有效，捕捉动量效应和规避动量崩溃是决定动量策略表现的关键因素
 定义各行业的动量因子为过去一段时间的行业累计收益率，有： $$ F_{i,t} = \frac{ClosePrice_{i,t}}{ClosePrice_{i,t-win_len+1}}-1 $$
 $F_{i,t}$为第𝑖个行业在𝑡时刻的动量因子
 𝑖 = 1,2, ⋯ , 𝑁; 𝑡 = 𝑤𝑖𝑛_𝑙𝑒𝑛, ⋯ , 𝑇；
@@ -20,7 +55,16 @@ STEP2：计算方差贡献率。将特征值按照从大到小的顺序排序，
 在𝑛一定的情况下，方差贡献率𝐴𝑅越高，说明各行业走势的共同驱动因素就越强
 STEP3：计算单个行业𝑖的资产集中度。以前𝑛个𝐴𝑅为加权比例，计算第𝑖个行业分别在𝑛个特征向量暴露的绝对值在所有行业中的占比。行业𝑖的资产集中度指标即作为行业𝑖的拥挤度度量指标，有: $$ C_{i} = \frac{\sum\limits_{j=1}^{n} ({AR^j_i}*\frac{|EV^j_i|}{\sum\limits_{k=1}^{N} {|EV^j_k|}})}{\sum\limits_{j=1}^{n} {AR^j_i}} $$ $C_{i}$:行业𝑖的资产集中度得分; $AR^j_i$:第𝑗个特征向量的方差贡献率 $EV^j_i$:第𝑖个行业在第𝑗个特征向量暴露的绝对值 n:𝑛为方差贡献率分子中的特征向量数，取2
 策略
-多头组合：取出28 个中信一级行业（不含综合、综合金融）中过去250 个交易日累计涨幅最高的6 个行业。若6 个行业中不包含当前截面最拥挤行业，则等权买入该6 个行业；否则剔除最拥挤行业后递补涨幅靠前的第7 个行业。 空头组合：每次调仓时等权买入28 个中信一级行业（不含综合、综合金融）中，过去250 个交易日累计涨幅最低的6 个行业。 等权组合：每次调仓时等权买入28 个中信一级行业（不含综合、综合金融）。 多头超额：多头组合相对等权组合的累计超额。 市场拥挤度 单行业拥挤度指标剔除最拥挤行业降低了多头组合的持仓风险</description></item><item><title/><link>/post/research-report/%E8%A1%8C%E4%B8%9A%E8%BD%AE%E5%8A%A8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/post/research-report/%E8%A1%8C%E4%B8%9A%E8%BD%AE%E5%8A%A8/</guid><description>基于拥挤度判断的行业轮动策略 来源：基于拥挤度判断的行业轮动策略——信达证券 行业轮动策略（动量策略） 年度动量效应在行业层面可能有效，捕捉动量效应和规避动量崩溃是决定动量策略表现的关键因素
+多头组合：取出28 个中信一级行业（不含综合、综合金融）中过去250 个交易日累计涨幅最高的6 个行业。若6 个行业中不包含当前截面最拥挤行业，则等权买入该6 个行业；否则剔除最拥挤行业后递补涨幅靠前的第7 个行业。 空头组合：每次调仓时等权买入28 个中信一级行业（不含综合、综合金融）中，过去250 个交易日累计涨幅最低的6 个行业。 等权组合：每次调仓时等权买入28 个中信一级行业（不含综合、综合金融）。 多头超额：多头组合相对等权组合的累计超额。 市场拥挤度 单行业拥挤度指标剔除最拥挤行业降低了多头组合的持仓风险</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/post/research-report/%E8%A1%8C%E4%B8%9A%E8%BD%AE%E5%8A%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/research-report/%E8%A1%8C%E4%B8%9A%E8%BD%AE%E5%8A%A8/</guid>
+      <description>基于拥挤度判断的行业轮动策略 来源：基于拥挤度判断的行业轮动策略——信达证券 行业轮动策略（动量策略） 年度动量效应在行业层面可能有效，捕捉动量效应和规避动量崩溃是决定动量策略表现的关键因素
 定义各行业的动量因子为过去一段时间的行业累计收益率，有： $$ F_{i,t} = \frac{ClosePrice_{i,t}}{ClosePrice_{i,t-win_len+1}}-1 $$
 $F_{i,t}$为第𝑖个行业在𝑡时刻的动量因子
 𝑖 = 1,2, ⋯ , 𝑁; 𝑡 = 𝑤𝑖𝑛_𝑙𝑒𝑛, ⋯ , 𝑇；
@@ -38,4 +82,9 @@ STEP2：计算方差贡献率。将特征值按照从大到小的顺序排序，
 在𝑛一定的情况下，方差贡献率𝐴𝑅越高，说明各行业走势的共同驱动因素就越强
 STEP3：计算单个行业𝑖的资产集中度。以前𝑛个𝐴𝑅为加权比例，计算第𝑖个行业分别在𝑛个特征向量暴露的绝对值在所有行业中的占比。行业𝑖的资产集中度指标即作为行业𝑖的拥挤度度量指标，有: $$ C_{i} = \frac{\sum\limits_{j=1}^{n} ({AR^j_i}*\frac{|EV^j_i|}{\sum\limits_{k=1}^{N} {|EV^j_k|}})}{\sum\limits_{j=1}^{n} {AR^j_i}} $$ $C_{i}$:行业𝑖的资产集中度得分; $AR^j_i$:第𝑗个特征向量的方差贡献率 $EV^j_i$:第𝑖个行业在第𝑗个特征向量暴露的绝对值 n:𝑛为方差贡献率分子中的特征向量数，取2
 策略
-多头组合：取出28 个中信一级行业（不含综合、综合金融）中过去250 个交易日累计涨幅最高的6 个行业。若6 个行业中不包含当前截面最拥挤行业，则等权买入该6 个行业；否则剔除最拥挤行业后递补涨幅靠前的第7 个行业。 空头组合：每次调仓时等权买入28 个中信一级行业（不含综合、综合金融）中，过去250 个交易日累计涨幅最低的6 个行业。 等权组合：每次调仓时等权买入28 个中信一级行业（不含综合、综合金融）。 多头超额：多头组合相对等权组合的累计超额。 市场拥挤度 单行业拥挤度指标剔除最拥挤行业降低了多头组合的持仓风险</description></item></channel></rss>
+多头组合：取出28 个中信一级行业（不含综合、综合金融）中过去250 个交易日累计涨幅最高的6 个行业。若6 个行业中不包含当前截面最拥挤行业，则等权买入该6 个行业；否则剔除最拥挤行业后递补涨幅靠前的第7 个行业。 空头组合：每次调仓时等权买入28 个中信一级行业（不含综合、综合金融）中，过去250 个交易日累计涨幅最低的6 个行业。 等权组合：每次调仓时等权买入28 个中信一级行业（不含综合、综合金融）。 多头超额：多头组合相对等权组合的累计超额。 市场拥挤度 单行业拥挤度指标剔除最拥挤行业降低了多头组合的持仓风险</description>
+    </item>
+    
+    
+  </channel>
+</rss>
