@@ -10,7 +10,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/post/research-report/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
+      <title>基于拥挤度判断的行业轮动策略</title>
       <link>/post/research-report/%E8%A1%8C%E4%B8%9A%E8%BD%AE%E5%8A%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -20,7 +20,7 @@
 $F_{i,t}$为第𝑖个行业在𝑡时刻的动量因子
 𝑖 = 1,2, ⋯ , 𝑁; 𝑡 = 𝑤𝑖𝑛_𝑙𝑒𝑛, ⋯ , 𝑇；
 𝑁为截面行业个数；𝑇为回测时段总天数；
-𝐶𝑙𝑜𝑠𝑒𝑃𝑟𝑖𝑐𝑒~𝑖~,𝑡为第𝑖个行业在𝑡时刻的收盘价
+$𝐶𝑙𝑜𝑠𝑒𝑃𝑟𝑖𝑐𝑒_𝑖$,𝑡为第𝑖个行业在𝑡时刻的收盘价
 𝑤𝑖𝑛_𝑙𝑒𝑛为计算累计收益率时使用的回看窗口的天数
 !!!note 回看窗口（𝒘𝒊𝒏_𝒍𝒆𝒏）是动量策略的关键参数 &amp;lt;60交易日为短期；&amp;gt;250交易日为长期
 中期动量250个交易日为最优

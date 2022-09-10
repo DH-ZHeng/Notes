@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Python | DH-ZHeng&#39;s Notes</title>
+<meta name="keywords" content="">
+<meta name="description" content="&gt;pandas df.sub(a, axis=0) # 按行减去a这一行df.drop(a, axis=0) # 删除a这一列df.dropna() # 删除空值df.cov(ddof=n) # 求自由度为n的协方差df.sort_values(by=aattribute) # 按照某个属性的值排序df.set_index() # 设置索引，可double sortingdf.isin(values) # values:iterable, setries, Dataframe or dictdf.swaplevel() # 交换双重index的位置df.reset_index() # 重置index, index作为data储存df.fillna(num) # 用num补充所有的nandf.cumprod() # 每个位置的value有前面所有balues累乘df.cumsum() # 累加df.drop_duplicates() # 删除重复值 df.astype() # 整张表修改数据格式 pd.isnull(df).sum() # 空值统计pd.merge(df1, df2, on= ) # 相同索引会归在同一行，按列拼接pd.concat([df1, df2], axis=0) # 横向拼接pd.DatetimeIndex(Growth_Rate.index.get_level_values(1)).year==Year # 双重index内索引为时间，取出某一年的数据 &gt;numpy np.ones(n) # 一维np.">
+<meta name="author" content="Me">
+<link rel="canonical" href="../../../post/code/python/">
+<link crossorigin="anonymous" href="../../../assets/css/stylesheet.7724d22529cfe45251a75aac6f7ed6f72ec0e9166b09b08e3bb5619f3fc6aea2.css" integrity="sha256-dyTSJSnP5FJRp1qsb37W9y7A6RZrCbCOO7Vhnz/GrqI=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="../../../assets/js/highlight.617e147beb23294334e33e07d38dc7714bb3b0dcc2cf7f5671f7ee2fd0668950.js" integrity="sha256-YX4Ue&#43;sjKUM04z4H043HcUuzsNzCz39WcffuL9BmiVA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="mask-icon" href="safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Python" />
+<meta property="og:description" content="&gt;pandas df.sub(a, axis=0) # 按行减去a这一行df.drop(a, axis=0) # 删除a这一列df.dropna() # 删除空值df.cov(ddof=n) # 求自由度为n的协方差df.sort_values(by=aattribute) # 按照某个属性的值排序df.set_index() # 设置索引，可double sortingdf.isin(values) # values:iterable, setries, Dataframe or dictdf.swaplevel() # 交换双重index的位置df.reset_index() # 重置index, index作为data储存df.fillna(num) # 用num补充所有的nandf.cumprod() # 每个位置的value有前面所有balues累乘df.cumsum() # 累加df.drop_duplicates() # 删除重复值 df.astype() # 整张表修改数据格式 pd.isnull(df).sum() # 空值统计pd.merge(df1, df2, on= ) # 相同索引会归在同一行，按列拼接pd.concat([df1, df2], axis=0) # 横向拼接pd.DatetimeIndex(Growth_Rate.index.get_level_values(1)).year==Year # 双重index内索引为时间，取出某一年的数据 &gt;numpy np.ones(n) # 一维np." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/code/python/" /><meta property="og:image" content="img/headp.png"/><meta property="article:section" content="post" />
+
+<meta property="og:site_name" content="DH-ZHeng&#39;s Notes" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="img/headp.png"/>
+
+<meta name="twitter:title" content="Python"/>
+<meta name="twitter:description" content="&gt;pandas df.sub(a, axis=0) # 按行减去a这一行df.drop(a, axis=0) # 删除a这一列df.dropna() # 删除空值df.cov(ddof=n) # 求自由度为n的协方差df.sort_values(by=aattribute) # 按照某个属性的值排序df.set_index() # 设置索引，可double sortingdf.isin(values) # values:iterable, setries, Dataframe or dictdf.swaplevel() # 交换双重index的位置df.reset_index() # 重置index, index作为data储存df.fillna(num) # 用num补充所有的nandf.cumprod() # 每个位置的value有前面所有balues累乘df.cumsum() # 累加df.drop_duplicates() # 删除重复值 df.astype() # 整张表修改数据格式 pd.isnull(df).sum() # 空值统计pd.merge(df1, df2, on= ) # 相同索引会归在同一行，按列拼接pd.concat([df1, df2], axis=0) # 横向拼接pd.DatetimeIndex(Growth_Rate.index.get_level_values(1)).year==Year # 双重index内索引为时间，取出某一年的数据 &gt;numpy np.ones(n) # 一维np."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Code",
+      "item": "/post/code/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  4 ,
+      "name": "Python",
+      "item": "/post/code/python/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Python",
+  "name": "Python",
+  "description": "\u0026gt;pandas df.sub(a, axis=0) # 按行减去a这一行\rdf.drop(a, axis=0) # 删除a这一列\rdf.dropna() # 删除空值\rdf.cov(ddof=n) # 求自由度为n的协方差\rdf.sort_values(by=aattribute) # 按照某个属性的值排序\rdf.set_index() # 设置索引，可double sorting\rdf.isin(values) # values:iterable, setries, Dataframe or dict\rdf.swaplevel() # 交换双重index的位置\rdf.reset_index() # 重置index, index作为data储存\rdf.fillna(num) # 用num补充所有的nan\rdf.cumprod() # 每个位置的value有前面所有balues累乘\rdf.cumsum() # 累加\rdf.drop_duplicates() # 删除重复值 df.astype() # 整张表修改数据格式 pd.isnull(df).sum() # 空值统计\rpd.merge(df1, df2, on= ) # 相同索引会归在同一行，按列拼接\rpd.concat([df1, df2], axis=0) # 横向拼接\rpd.DatetimeIndex(Growth_Rate.index.get_level_values(1)).year==Year # 双重index内索引为时间，取出某一年的数据 \u0026gt;numpy np.ones(n) # 一维\rnp.",
+  "keywords": [
+    
+  ],
+  "articleBody": "\u003epandas df.sub(a, axis=0) # 按行减去a这一行\rdf.drop(a, axis=0) # 删除a这一列\rdf.dropna() # 删除空值\rdf.cov(ddof=n) # 求自由度为n的协方差\rdf.sort_values(by=aattribute) # 按照某个属性的值排序\rdf.set_index() # 设置索引，可double sorting\rdf.isin(values) # values:iterable, setries, Dataframe or dict\rdf.swaplevel() # 交换双重index的位置\rdf.reset_index() # 重置index, index作为data储存\rdf.fillna(num) # 用num补充所有的nan\rdf.cumprod() # 每个位置的value有前面所有balues累乘\rdf.cumsum() # 累加\rdf.drop_duplicates() # 删除重复值 df.astype() # 整张表修改数据格式 pd.isnull(df).sum() # 空值统计\rpd.merge(df1, df2, on= ) # 相同索引会归在同一行，按列拼接\rpd.concat([df1, df2], axis=0) # 横向拼接\rpd.DatetimeIndex(Growth_Rate.index.get_level_values(1)).year==Year # 双重index内索引为时间，取出某一年的数据 \u003enumpy np.ones(n) # 一维\rnp.ones((n,m)) # 二维\rnp.zeros()\rnp.ones()\rnp.linalg.inv() # 求逆矩阵\rnp.dot(data1, data2) # 矩阵相乘\rdf1.dot(df2)\rnp.split(data, [多个拆分位置]) # 拆分数据\rnp.array_split(data, n) # 将数据平分成为n列\rnp.maximum.accumulate(data)\rnp.maximum.accumulate(date) # 计算数组（或dataframe特定轴）的累积最大值（用于最大回撤）\rnp.unique(data) # 找出不重复的值\rnp.argmax(data) # 返回一个numpy数组中最大值的索引值，多个是返回第一个\rnp.sign(data) # 取数字符号（正负号）的函数（-1，0，1）\rnp.clip(data, a, b) # 剪枝，数据范围限制在[a,b]之间\rnp.quantile(data, quantile) # 取出data的quantile的值\rnp.vstack((array1, array2)) # 纵向堆叠数据\rnp.hstack((array1, array2)) # 水平堆叠数据\rarray.tolist() # array转为list\rarray.cumsum() # 累加，可用于多维数组 \u003e统计方法 回归 y = x =\rx = sm.add_constant(x)\rmodel = sm.OLS(y,x)\rresult = model.fit()\rp = scipy.stats.f.sf(n:标的数量， m-n-1:自由度)\rststs.ttest_1samp(data,values) # t_test:data可以是多列，同时values要为对应数量的值，比如检验25列数据是否显著不为0，values应该为25个0的list \u003e数据保存 保存到excel savelocal = writer = pd.ExcelWriter(savelocal)\rdf.to_excel(writer, sheet_name='')\rwriter.save()\rwriter.close() \u003e多进程 p = mp.Pool(n): # n:多进程数量\rresult = []\rresult.append(p.apply_async(function, args=()))\rfor i in result：\rprint(b.get()) # 多进程debug输出\rp.close()\rp.join() \u003eLeetcode enumerate(x) # 给x中的元素贴上序号，并返回序号与元素值\rdict().get() # 根据index取出值 ",
+  "wordCount" : "189",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Me"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/code/python/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DH-ZHeng's Notes",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "favicon.ico"
+    }
+  }
+}
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      inlineMath: [['$','$']]
+    }
+  });
+</script>
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="" accesskey="h" title="DH ZHeng&#39;s Notes (Alt + H)">
+                <img src="img/deadp.png" alt="" aria-label="logo"
+                    height="35">DH ZHeng&#39;s Notes</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="../../../" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:13129114635@163.com" title="Email">
+                    <span>Email</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../../search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="">Home</a>&nbsp;»&nbsp;<a href="../../../post/">Posts</a>&nbsp;»&nbsp;<a href="../../../post/code/">Code</a></div>
+    <h1 class="post-title">
+      Python
+    </h1>
+    <div class="post-meta">1 min&nbsp;·&nbsp;189 words&nbsp;·&nbsp;Me
+
+</div>
+  </header> <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+            <summary accesskey="c" title="(Alt + C)">
+                <span class="details">Table of Contents</span>
+            </summary>
+
+            <div class="inner"><ul>
+                    <li>
+                        <a href="#pandas" aria-label="&amp;gt;pandas"><strong>&gt;pandas</strong></a></li>
+                    <li>
+                        <a href="#numpy" aria-label="&amp;gt;numpy"><strong>&gt;numpy</strong></a></li>
+                    <li>
+                        <a href="#%e7%bb%9f%e8%ae%a1%e6%96%b9%e6%b3%95" aria-label="&amp;gt;统计方法"><strong>&gt;统计方法</strong></a><ul>
+                            
+                    <li>
+                        <a href="#%e5%9b%9e%e5%bd%92" aria-label="回归">回归</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#%e6%95%b0%e6%8d%ae%e4%bf%9d%e5%ad%98" aria-label="&amp;gt;数据保存"><strong>&gt;数据保存</strong></a><ul>
+                            
+                    <li>
+                        <a href="#%e4%bf%9d%e5%ad%98%e5%88%b0excel" aria-label="保存到excel">保存到excel</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#%e5%a4%9a%e8%bf%9b%e7%a8%8b" aria-label="&amp;gt;多进程"><strong>&gt;多进程</strong></a></li>
+                    <li>
+                        <a href="#leetcode" aria-label="&amp;gt;Leetcode"><strong>&gt;Leetcode</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+         
+         activeElement = elements[0];
+         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+     }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+             const id = encodeURI(element.getAttribute('id')).toLowerCase();
+             if (element === activeElement){
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+             } else {
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+             }
+         })
+     }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;   
+    }
+</script>
+
+
+  <div class="post-content"><h1 id="pandas"><strong>&gt;pandas</strong><a hidden class="anchor" aria-hidden="true" href="#pandas">#</a></h1>
+<pre tabindex="0"><code>    df.sub(a, axis=0)   # 按行减去a这一行
+    df.drop(a, axis=0)  # 删除a这一列
+    df.dropna()         # 删除空值
+    df.cov(ddof=n)      # 求自由度为n的协方差
+    df.sort_values(by=aattribute)   # 按照某个属性的值排序
+    df.set_index()      # 设置索引，可double sorting
+    df.isin(values)     # values:iterable, setries, Dataframe or dict
+    df.swaplevel()      # 交换双重index的位置
+    df.reset_index()    # 重置index, index作为data储存
+    df.fillna(num)      # 用num补充所有的nan
+    df.cumprod()        # 每个位置的value有前面所有balues累乘
+    df.cumsum()         # 累加
+    df.drop_duplicates()    # 删除重复值        
+    df.astype()         # 整张表修改数据格式         
+
+    pd.isnull(df).sum() # 空值统计
+
+    pd.merge(df1, df2, on= )    # 相同索引会归在同一行，按列拼接
+    pd.concat([df1, df2], axis=0)   # 横向拼接
+
+    pd.DatetimeIndex(Growth_Rate.index.get_level_values(1)).year==Year   # 双重index内索引为时间，取出某一年的数据
+</code></pre><h1 id="numpy"><strong>&gt;numpy</strong><a hidden class="anchor" aria-hidden="true" href="#numpy">#</a></h1>
+<pre tabindex="0"><code>    np.ones(n)              # 一维
+    np.ones((n,m))          # 二维
+    np.zeros()
+    np.ones()
+    np.linalg.inv()         # 求逆矩阵
+    np.dot(data1, data2)    # 矩阵相乘
+    df1.dot(df2)
+    np.split(data, [多个拆分位置])   # 拆分数据
+    np.array_split(data, n)         # 将数据平分成为n列
+    np.maximum.accumulate(data)
+    np.maximum.accumulate(date)     # 计算数组（或dataframe特定轴）的累积最大值（用于最大回撤）
+    np.unique(data)         # 找出不重复的值
+    np.argmax(data)         # 返回一个numpy数组中最大值的索引值，多个是返回第一个
+    np.sign(data)           # 取数字符号（正负号）的函数（-1，0，1）
+    np.clip(data, a, b)     # 剪枝，数据范围限制在[a,b]之间
+    np.quantile(data, quantile)     # 取出data的quantile的值
+    np.vstack((array1, array2))     # 纵向堆叠数据
+    np.hstack((array1, array2))     # 水平堆叠数据
+
+    array.tolist()          # array转为list
+    array.cumsum()          # 累加，可用于多维数组
+</code></pre><h1 id="统计方法"><strong>&gt;统计方法</strong><a hidden class="anchor" aria-hidden="true" href="#统计方法">#</a></h1>
+<h2 id="回归">回归<a hidden class="anchor" aria-hidden="true" href="#回归">#</a></h2>
+<pre tabindex="0"><code>    y = 
+    x =
+    x = sm.add_constant(x)
+    model = sm.OLS(y,x)
+    result = model.fit()
+
+    p = scipy.stats.f.sf(n:标的数量， m-n-1:自由度)
+    ststs.ttest_1samp(data,values)  # t_test:data可以是多列，同时values要为对应数量的值，比如检验25列数据是否显著不为0，values应该为25个0的list
+</code></pre><h1 id="数据保存"><strong>&gt;数据保存</strong><a hidden class="anchor" aria-hidden="true" href="#数据保存">#</a></h1>
+<h2 id="保存到excel">保存到excel<a hidden class="anchor" aria-hidden="true" href="#保存到excel">#</a></h2>
+<pre tabindex="0"><code>    savelocal = 
+    writer = pd.ExcelWriter(savelocal)
+    df.to_excel(writer, sheet_name=&#39;&#39;)
+
+    writer.save()
+    writer.close()
+</code></pre><h1 id="多进程"><strong>&gt;多进程</strong><a hidden class="anchor" aria-hidden="true" href="#多进程">#</a></h1>
+<pre tabindex="0"><code>    p = mp.Pool(n):     # n:多进程数量
+    result = []
+    result.append(p.apply_async(function, args=()))
+    
+    for i in result：
+    print(b.get())      # 多进程debug输出
+
+    p.close()
+    p.join()
+</code></pre><h1 id="leetcode"><strong>&gt;Leetcode</strong><a hidden class="anchor" aria-hidden="true" href="#leetcode">#</a></h1>
+<pre tabindex="0"><code>    enumerate(x)         # 给x中的元素贴上序号，并返回序号与元素值
+    dict().get()         # 根据index取出值
+</code></pre>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="../../../post/civil-servant/essay/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Essay</span>
+  </a>
+  <a class="next" href="../../../post/research-report/%E8%A1%8C%E4%B8%9A%E8%BD%AE%E5%8A%A8/">
+    <span class="title">Next »</span>
+    <br>
+    <span>基于拥挤度判断的行业轮动策略</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="">DH-ZHeng&#39;s Notes</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+ 
+</body>
+
+</html>

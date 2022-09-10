@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Code on DH-ZHeng&#39;s Notes</title>
+    <link>/post/code/</link>
+    <description>Recent content in Code on DH-ZHeng&#39;s Notes</description>
+    <image>
+      <url>img/headp.png</url>
+      <link>img/headp.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/post/code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python</title>
+      <link>/post/code/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/code/python/</guid>
+      <description>&amp;gt;pandas df.sub(a, axis=0) # 按行减去a这一行df.drop(a, axis=0) # 删除a这一列df.dropna() # 删除空值df.cov(ddof=n) # 求自由度为n的协方差df.sort_values(by=aattribute) # 按照某个属性的值排序df.set_index() # 设置索引，可double sortingdf.isin(values) # values:iterable, setries, Dataframe or dictdf.swaplevel() # 交换双重index的位置df.reset_index() # 重置index, index作为data储存df.fillna(num) # 用num补充所有的nandf.cumprod() # 每个位置的value有前面所有balues累乘df.cumsum() # 累加df.drop_duplicates() # 删除重复值 df.astype() # 整张表修改数据格式 pd.isnull(df).sum() # 空值统计pd.merge(df1, df2, on= ) # 相同索引会归在同一行，按列拼接pd.concat([df1, df2], axis=0) # 横向拼接pd.DatetimeIndex(Growth_Rate.index.get_level_values(1)).year==Year # 双重index内索引为时间，取出某一年的数据 &amp;gt;numpy np.ones(n) # 一维np.</description>
+    </item>
+    
+  </channel>
+</rss>
